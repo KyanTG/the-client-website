@@ -4,7 +4,7 @@
  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="styles" href="dda.css">
+    <link rel="stylesheet" href="styles/dda.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,6 +20,8 @@
 
 <body>
  <header>
+  <!-- navigatiebalk -->
+
   <img id="logo" src="content/dda-logo-white.svg" alt="logo dda">
     
     <nav>
@@ -68,6 +70,8 @@
 
     <div class="containervideo">
 
+      <!-- logoslider -->
+
      <img id="logo1" src="content/logos/Logob.svg" alt="logo1">
      <img id="logo2" src="content/logos/Logocleverfranke.svg" alt="logo2">
      <img id="logo3" src="content/logos/Logodept.svg" alt="logo3">
@@ -89,14 +93,18 @@
 
     <section class="containerpersonen">
 
+     <!-- ons team en werknemers -->
+
       <h2>Maak kennis met ons team</h2>
       <p id="tekst4">Maak kennis met ons bestuur en ons dagelijkse management. 
          Ons bestuur is een afspiegeling van onze leden en bestaat uit (voormalig) bureau eigenaren en directieleden van grote en kleinere,
           oude en jonge bureaus uit heel Nederland.</p>
       
         <article class="elvire">
+          
+         
 
-        <img id="elvirefoto" src="content/personen/Imageelvire.svg" alt="elvire">
+        <img id="elvirefoto" src="content/personen/ImageElvire.jpg" alt="elvire">
         <h3>Elvire Jaspers</h3>
         <p id="elvireinfo">CEO WeAreBrain, portefeuille PR & Communicatie</p>
         <a href="https://www.linkedin.com/in/elvirejaspers/" target="_blank">Linkedin<img src="content/arrow-right-up.svg" alt="linkedin elvire"></a>
@@ -105,7 +113,7 @@
 
       <article class="karlijn">
 
-        <img id="karlijnfoto" src="content/personen/Imagekarlijn.svg" alt="karlijn">
+        <img id="karlijnfoto" src="content/personen/Imagekarlijn.jpg" alt="karlijn">
         <h3>Karlijn Koekoek</h3>
         <p id="karlijninfo">Bureaumanagement</p>
         <a href="https://www.linkedin.com/in/karlijn-koekoek-858248b/" target="_blank">Linkedin<img src="content/arrow-right-up.svg" alt="linkedin karlijn"></a>
@@ -114,7 +122,7 @@
 
       <article class="mark">
 
-        <img id="markfoto" src="content/personen/Imagemark.svg" alt="mark">
+        <img id="markfoto" src="content/personen/Imagemark.jpg" alt="mark">
         <h3>Mark Landman</h3>
         <p id="markinfo">Managing partner DotControl, Voorzitter & Belangenbehartiging</p>
         <a href="https://www.linkedin.com/in/marklandman/" target="_blank">Linkedin<img src="content/arrow-right-up.svg" alt="linkedin mark"></a>
@@ -123,7 +131,7 @@
       
       <article class="martijn">
       
-        <img id="martijnfoto" src="content/personen/Imagemartijn.svg" alt="martijn">
+        <img id="martijnfoto" src="content/personen/Imagemartijn.jpg" alt="martijn">
         <h3>Martijn Vervoordeldonk</h3>
         <p id="martijninfo">Partnership manager iO, Penningmeester</p>
         <a href="https://www.linkedin.com/in/martijnvervoordeldonk/" target="_blank">Linkedin<img src="content/arrow-right-up.svg" alt="linkedin martijn"></a>
@@ -132,7 +140,7 @@
 
         <article class="nienke">
 
-        <img id="nienkefoto" src="content/personen/Imagenienke.svg" alt="nienke">
+        <img id="nienkefoto" src="content/personen/Imagenienke.jpg" alt="nienke">
         <h3>Nienke van Heusden</h3>
         <p id="nienkeinfo">Managing Director Kaliber, portefeuille Events</p>
         <a href="https://www.linkedin.com/in/nienkevanheusden/" target="_blank">Linkedin<img src="content/arrow-right-up.svg" alt="linkedin nienke"></a>
@@ -141,7 +149,7 @@
      
       <article class="pieter">
 
-        <img id="pieterfoto" src="content/personen/Imagepieter.svg" alt="pieter">
+        <img id="pieterfoto" src="content/personen/Imagepieter.jpg" alt="pieter">
         <h3>Pieter Aarts</h3>
         <p id="pieterinfo">Principal Service Design, Ordina Digital, portefeuille Kennis</p>
         <a href="https://www.linkedin.com/in/pietera/" target="_blank">Linkedin<img src="content/arrow-right-up.svg" alt="linkedin pieter"></a>
@@ -150,7 +158,7 @@
 
       <article class="fenna">
 
-        <img id="fennafoto" src="content/personen/Imagefenna.svg" alt="fenna">
+        <img id="fennafoto" src="content/personen/Imagefenna.jpg" alt="fenna">
         <h3>Fenna van Raaij</h3>
         <p id="fennainfo">Directeur</p>
         <a href="https://www.linkedin.com/in/fenna-van-raaij-a4652733/" target="_blank">Linkedin<img src="content/arrow-right-up.svg" alt="linkedin fenna"></a>
@@ -176,7 +184,13 @@
     <nav class="container-links">
 
         <img id="logo-dda" src="content/dda-logo-white.svg" alt="logo dda">
-        <a href="#">inloggen<img src="content/arrow-right.svg" alt="arrow-right"></a>
+        <a id="inloggen" href="#">inloggen 
+         
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M8 3L13.0001 8.0001L8 13.0002" stroke="#364BF7" stroke-width="1.5" stroke-miterlimit="4.62023"/>
+            <path d="M3 8L13 8" stroke="#364BF7" stroke-width="1.5" stroke-miterlimit="4.62023" stroke-linejoin="round"/>
+            </svg></a>
+
         <a href="#">Over ons</a>
         <a href="#">Events</a>
         <a href="#">Publicaties</a>
