@@ -1,43 +1,123 @@
 html {
-    background: white;
-}
+    background: white; }
 
 body {
-    font-family:"Archivo", Arial, Helvetica, sans-serif;
+    font-family:"Archivo", Arial, Helvetica, sans-serif; }
 
-}
+button {
+    font-family: "Martian Mono";
+    text-transform: uppercase; }
+
+a {
+    text-decoration: none; }
 
 
 header {
     display: grid;
-}
+    padding-left: 16px; }
 
-.container1 {
+.over-ons {
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin: 16px;
-    text-align: center;
-}
+    text-align: center; 
+    padding-bottom: 62px;
+    padding-left:16px ;}
 
 h1 {
     font-size: 48px;
     text-transform: uppercase;
     line-height: 100%;
-    letter-spacing: -4%;
-}
+    letter-spacing: -4%; }
 
 #inloggen {
     display: flex;
     align-items: center;
     gap:8px;
-    
     font-family: "Martian Mono";
     text-transform: uppercase;
+    font-size: 14px; }
+
+
+.video-button {
+    position: relative;
+    width: fit-content; }
+
+#video {
+    display: flex;
+    justify-content: center;
+    align-items: center;}
+
+.video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;}
+    
+#bekijk-video {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-size: 14px;
+    font-weight: bold;
+    height: 52px;
+    width: 248px ;
+    gap: 12px;
+    background-color: white;
+    border: 10% solid black; }
 
+#text2 {
+    font-family: "Martian Mono" ;
+    font-size: 14px;
+    text-transform: uppercase;
+    padding-left: 16px; }
+
+.informatie {
+    padding-left: 16px; }
+
+#DDAH2 {
+    font-size: 24px;
+    font-weight: 400;
+    padding-bottom: 62px;
+    padding-top: 92px; }
+
+.button-leden {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 48px;
+    padding-bottom: 68px; }
+
+#bekijk-leden {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    height: 40px;
+    width: 208px ;
+    gap: 12px;
+    background-color: white;
+    border: 10% solid black; }    
+
+
+.logoscroller {
+    display: flex;
+    flex-direction: row; }
+
+.logoscroller2 {
+    display: flex;
+    flex-direction: row; }
+
+#logo1, #logo2, #logo3, #logo4, #logo5, #logo6, #logo7, #logo8, #logo9, #logo10, #logo11
+, #logo12, #logo13, #logo14, #logo15, #logo16 {
+    width: 120px;
+    height: 120px;
 }
 
-a {
-    text-decoration: none;
-}
+
+
+

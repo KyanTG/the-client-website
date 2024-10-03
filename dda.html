@@ -20,10 +20,12 @@
 
 <body>
  <header>
-  <!-- navigatiebalk -->
+  
 
   <img id="logo" src="content/dda-logo-white.svg" alt="logo dda">
     
+  <!-- navigatiebalk -->
+
     <nav>
      <ul>
       <li><a href="#">over ons</a></li>
@@ -31,8 +33,14 @@
       <li><a href="#">publicaties</a></li>
       <li><a href="#">leden</a></li>
       <li><a href="#">vacatures</a></li>
-      <li><a href="#">inloggen <img src="content/arrow-right.svg" alt="inloggen button"></a></li>
-      <li><button>word lid</button></li>
+      <li><a href="#">inloggen</a></li>
+      <button>word lid           
+        
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M8 3L13.0001 8.0001L8 13.0002" stroke="#364BF7" stroke-width="1.5" stroke-miterlimit="4.62023"/>
+        <path d="M3 8L13 8" stroke="#364BF7" stroke-width="1.5" stroke-miterlimit="4.62023" stroke-linejoin="round"/>
+        </svg></button></li>
+
       <li onclick=showSidebar()><a href="#"><img src="content/hamburger.svg" alt="menu button"></a></li>
      </ul>
     </nav>
@@ -40,7 +48,9 @@
  </header>
 
 
-    <div class="container1">
+    <div class="over-ons">
+
+      <!-- over dda -->
 
      <a href="#"><img src="content/arrow-left.svg" alt="arrow left">terug naar home</a>
      <h1>Over ons</h1>
@@ -48,27 +58,44 @@
         Samen maken we de wereld om ons heen steeds een beetje slimmer. Stap voor stap, klik na klik.</p>
     </div>
 
-    <div class="containervideo">
+    <div class="video-button">
+
+      <!-- video dda -->
 
      <img id="video" src="content/video.svg" alt="video">
-     <button>bekijk video</button>
+      <div class="video-overlay"><button id="bekijk-video">bekijk onze video
+      
+       <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M8 3L13.0001 8.0001L8 13.0002" stroke="#000000" stroke-width="1.5" stroke-miterlimit="4.62023"/>
+        <path d="M3 8L13 8" stroke="#000000" stroke-width="1.5" stroke-miterlimit="4.62023" stroke-linejoin="round"/>
+        </svg></button></div>
+
      <p id="text2">Dé branchevereniging voor digitale bureaus</p>
     </div>
 
-    <div class="container3">
+    <div class="informatie">
 
-      <h2>Sinds 2002 verbindt DDA de meest toonaangevende digitale bureaus.</h2>
+      <!-- informatie over DDA -->
+
+      <h2 id="DDAH2">Sinds 2002 verbindt DDA de meest toonaangevende digitale bureaus.</h2>
       <p id="text3">We delen kennis en ervaringen, prikkelen met nieuwe ideeën en digitale toepassingen en laten zien wat we kunnen. 
         Samen versterken we onze snelgroeiende branche en ontwikkelen het talent van morgen. 
-        We zijn trots op onze kennis en ons werk. En vertellen daar graag over op events en in de media. 
+        We zijn trots op onze kennis en ons werk. En vertellen daar graag over op events en in de media.</p>
 
-        Met onze leden staan we voor het beste dat de Nederlandse digitale industrie te bieden heeft. 
+        
+      <p id="text4">Met onze leden staan we voor het beste dat de Nederlandse digitale industrie te bieden heeft. 
         We zijn bedenkers en makers, ontwerpers en coders, testers en verslimmers. Flexibele teams met flexibele denkers. 
-        Altijd bezig met de volgende oplossing. </p>
-        <button>bekijk leden</button>
-    </div>
+        Altijd bezig met de volgende oplossing.</p>
+       <div class="button-leden">
+        <button id="bekijk-leden">bekijk onze leden       
+          
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M8 3L13.0001 8.0001L8 13.0002" stroke="#000000" stroke-width="1.5" stroke-miterlimit="4.62023"/>
+          <path d="M3 8L13 8" stroke="#000000" stroke-width="1.5" stroke-miterlimit="4.62023" stroke-linejoin="round"/>
+          </svg></button>
+    </div></div> 
 
-    <div class="containervideo">
+    <div class="logoscroller">
 
       <!-- logoslider -->
 
@@ -80,18 +107,24 @@
      <img id="logo6" src="content/logos/Logoh.svg" alt="logo6">
      <img id="logo7" src="content/logos/Logohumanoids.svg" alt="logo7">
      <img id="logo8" src="content/logos/Logoio.svg" alt="logo8">
-     <img id="logo9" src="content/logos/Logokoos.svg" alt="logo9">
-     <img id="logo10" src="content/logos/Logomediamonks.svg" alt="logo10">
-     <img id="logo11" src="content/logos/Logopowerkraut.svg" alt="logo11">
-     <img id="logo12" src="content/logos/Logoq42.svg" alt="logo12">
-     <img id="logo13" src="content/logos/Logoresoluut.svg" alt="logo13">
-     <img id="logo14" src="content/logos/Logostimmt.svg" alt="logo14">
-     <img id="logo15" src="content/logos/Logoverve.svg" alt="logo15">
-     <img id="logo16" src="content/logos/Logovoorhoede.svg" alt="logo16">
+    </div>
+
+    <div class="logoscroller2">
+
+     <!-- logoslider2 -->
+
+      <img id="logo9" src="content/logos/Logokoos.svg" alt="logo9">
+      <img id="logo10" src="content/logos/Logomediamonks.svg" alt="logo10">
+      <img id="logo11" src="content/logos/Logopowerkraut.svg" alt="logo11">
+      <img id="logo12" src="content/logos/Logoq42.svg" alt="logo12">
+      <img id="logo13" src="content/logos/Logoresoluut.svg" alt="logo13">
+      <img id="logo14" src="content/logos/Logostimmt.svg" alt="logo14">
+      <img id="logo15" src="content/logos/Logoverve.svg" alt="logo15">
+      <img id="logo16" src="content/logos/Logovoorhoede.svg" alt="logo16">
     </div>
     
 
-    <section class="containerpersonen">
+    <section class="medewerkers">
 
      <!-- ons team en werknemers -->
 
@@ -100,10 +133,8 @@
          Ons bestuur is een afspiegeling van onze leden en bestaat uit (voormalig) bureau eigenaren en directieleden van grote en kleinere,
           oude en jonge bureaus uit heel Nederland.</p>
       
-        <article class="elvire">
-          
-         
-
+      <article class="elvire">
+        
         <img id="elvirefoto" src="content/personen/ImageElvire.jpg" alt="elvire">
         <h3>Elvire Jaspers</h3>
         <p id="elvireinfo">CEO WeAreBrain, portefeuille PR & Communicatie</p>
@@ -166,7 +197,10 @@
       </article>
     </section>
 
-    <section class="container4">
+    <section class="partners">
+
+      <!-- samenwerkingen -->
+
      <h2>Wij bedanken onze trouwe partners</h2>
      <button>word partner</button>
      <img id="logo-rootnet" src="content/logos/Logorootnet.svg" alt="logo rootnet">
@@ -181,7 +215,9 @@
 
     </section>
 
-    <nav class="container-links">
+    <nav class="footer-linkjes">
+
+      <!-- links naar andere subpaginas en contact -->
 
         <img id="logo-dda" src="content/dda-logo-white.svg" alt="logo dda">
         <a id="inloggen" href="#">inloggen 
