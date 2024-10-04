@@ -162,12 +162,18 @@ h1 {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-left: 16px;
-    padding-bottom: 100px; }
+    padding-bottom: 100px;
+    
 
-#elvirefoto, #karlijnfoto, #markfoto, #martijnfoto, #nienkefoto, #pieterfoto, #fennafoto {
-    width: 312px;
-    margin-left: 16px; }
+    article {
+        max-width: min-content;
+        margin-left: 16px;
+    }
+
+    article > img {
+        object-fit: cover;
+    
+    } }
 
 .partners {
     display: flex;
