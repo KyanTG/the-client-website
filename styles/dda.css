@@ -86,13 +86,15 @@ h1 {
 
 
 .informatie {
-    padding-left: 16px; }
+    padding-left: 16px;
 
-#DDAH2 {
+   h2 { 
     font-size: 24px;
     font-weight: 400;
     padding-bottom: 62px;
-    padding-top: 92px; }
+    padding-top: 92px; } }
+
+
 
 .button-leden {
     display: flex;
@@ -116,16 +118,21 @@ h1 {
 
 .logoscroller {
     display: flex;
-    flex-direction: row; }
+    flex-direction: row;
+    overflow: hidden;
+
+    img {
+        width: 120px;
+        height: 120px; }}
 
 .logoscroller2 {
     display: flex;
-    flex-direction: row; }
+    flex-direction: row; 
+    overflow: hidden;
 
-#logo1, #logo2, #logo3, #logo4, #logo5, #logo6, #logo7, #logo8, #logo9, #logo10, #logo11
-, #logo12, #logo13, #logo14, #logo15, #logo16 {
-    width: 120px;
-    height: 120px; }
+    img {
+        width: 120px;
+        height: 120px; }}
 
 
 .ons-team {
@@ -164,16 +171,13 @@ h1 {
     flex-direction: column;
     padding-bottom: 100px;
     
-
     article {
         max-width: min-content;
-        margin-left: 16px;
-    }
+        margin-left: 16px; }
 
     article > img {
-        object-fit: cover;
-    
-    } }
+        object-fit: cover; 
+        border : 1px solid black } }
 
 .partners {
     display: flex;
@@ -183,14 +187,13 @@ h1 {
 .partner-logos {
     display: flex;
     align-items: center;
-    gap: 2px; }
+    overflow: hidden; 
+    gap: 2px; 
+   
+    img { 
+        width: 120px;
+        height: 120px; }}
 
-
-
-
-#logo-rootnet, #logo-ictrecht, #logo-amac {
-    width: 120px;
-    height: 120px; }
 
 .footer-linkjes {
     display: flex;
@@ -203,8 +206,7 @@ h1 {
     width: 107px;
     height: 80px;
     padding-top: 64px;
-    padding-bottom: 44px;
-}    
+    padding-bottom: 44px; }    
 
  #inloggen {
     display: flex;
