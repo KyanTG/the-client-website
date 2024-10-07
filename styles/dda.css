@@ -1,12 +1,26 @@
 html {
-    background: white; }
+    background: white; 
+
+    * {
+        box-sizing: border-box;
+    }
+
+
+}
 
 body {
-    font-family:"Archivo", Arial, Helvetica, sans-serif; }
+    font-family:"Archivo", Arial, Helvetica, sans-serif; 
+    margin: 0px;}
 
 button {
     font-family: "Martian Mono";
     text-transform: uppercase; }
+   
+h3 {
+    margin: 0; }    
+
+p {
+    margin: 0; }    
 
 a {
     text-decoration: none; }
@@ -14,9 +28,26 @@ a {
 
 header {
     display: grid;
-    padding-left: 16px; }
+    padding-left: 16px; 
+    display: none;}
 
+#word-lid {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: bold;
+    height: 52px;
+    width: 248px ;
+    gap: 12px;
+    background-color: white;
+    border: 10% solid black; }
 
+.black-box {
+    border-top: 1px solid black;
+    border-width: auto;
+    
+}   
     
 #terug-home {
     display: flex;
@@ -115,7 +146,6 @@ h1 {
     border: 10% solid black; }    
 
 
-
 .logoscroller {
     display: flex;
     flex-direction: row;
@@ -141,7 +171,8 @@ h1 {
     align-items: center;
     flex-direction: column;
     text-align: center;
-    padding-top: 94px;
+    padding-top: 96px;
+    padding-bottom: 96px;
     padding-left: 16px; }
 
 #organisatie-kop {
@@ -163,7 +194,6 @@ h1 {
     font-weight: 500; }    
 
 
-
 .medewerkers {
     display: flex;
     justify-content: center;
@@ -172,12 +202,41 @@ h1 {
     padding-bottom: 100px;
     
     article {
-        max-width: min-content;
-        margin-left: 16px; }
+        display: flex;
+        flex-direction: column;
+        height: 560px;
+        width: 100%; 
+        padding: 24px; }
+
 
     article > img {
+        align-self: center;
         object-fit: cover; 
-        border : 1px solid black } }
+        object-position: top;
+        outline: 1px solid black;
+        outline-offset: -1px; } }
+
+.naam-medewerker {
+    font-family:"Archivo";
+    font-size: 24px;
+    font-weight: 400;
+    padding-top: 24px; }     
+
+.infopersoon {
+    font-family: "Martian Mono";
+    text-transform: uppercase;
+    font-size: 14px;
+    padding-top: 16px; 
+    padding-bottom: 64px ;}
+
+.links-personen {
+
+    font-family: "Martian Mono";
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+    gap: 16px; }    
+
 
 .partners {
     display: flex;
