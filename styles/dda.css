@@ -2,11 +2,7 @@ html {
     background: white; 
 
     * {
-        box-sizing: border-box;
-    }
-
-
-}
+        box-sizing: border-box; } }
 
 body {
     font-family:"Archivo", Arial, Helvetica, sans-serif; 
@@ -16,20 +12,26 @@ button {
     font-family: "Martian Mono";
     text-transform: uppercase; }
    
-h3 {
-    margin: 0; }    
-
-p {
+h3, p {
     margin: 0; }    
 
 a {
     text-decoration: none; }
 
-
 header {
     display: grid;
-    padding-left: 16px; 
-    display: none;}
+    grid-template-columns: 70px 70px 70px 70px;
+    gap: 16px;
+    margin: 16px;
+    padding-top: 16px;
+
+    #menubalk {
+        color: white;
+        background: none;
+        border: none; }
+
+    a, #word-lid { 
+        display:none ; } }
 
 #word-lid {
     display: flex;
@@ -45,9 +47,7 @@ header {
 
 .black-box {
     border-top: 1px solid black;
-    border-width: auto;
-    
-}   
+    border-width: auto; }   
     
 #terug-home {
     display: flex;
@@ -55,21 +55,23 @@ header {
     justify-content: center;
     font-family: "Martian Mono";
     text-transform: uppercase;
+    font-size: 14px;
     gap: 8px;
     color: black;
-    font-size: 14px; }
+    padding-top: 64px; }
 
-    .over-ons {
+.over-ons {
     display: flex;
     align-items: center;
     flex-direction: column;
     text-align: center; 
-    padding-bottom: 62px;
+    padding-bottom: 64px;
     padding-left:16px ;}
 
 h1 {
     font-size: 48px;
     text-transform: uppercase;
+    margin-bottom: 16px;
     line-height: 100%;
     letter-spacing: -4%; }
 
@@ -112,8 +114,8 @@ h1 {
     font-family: "Martian Mono" ;
     font-size: 14px;
     text-transform: uppercase;
-    padding-left: 16px; }
-
+    padding-left: 16px; 
+    padding-top: 16px;}
 
 
 .informatie {
@@ -123,8 +125,11 @@ h1 {
     font-size: 24px;
     font-weight: 400;
     padding-bottom: 62px;
-    padding-top: 92px; } }
+    padding-top: 92px;
+    padding: 16px; } 
 
+    p {
+        padding-right: 16px; } }
 
 
 .button-leden {
@@ -173,6 +178,7 @@ h1 {
     text-align: center;
     padding-top: 96px;
     padding-bottom: 96px;
+    width: 328px;
     padding-left: 16px; }
 
 #organisatie-kop {
@@ -199,7 +205,6 @@ h1 {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding-bottom: 100px;
     
     article {
         display: flex;
@@ -207,7 +212,6 @@ h1 {
         height: 560px;
         width: 100%; 
         padding: 24px; }
-
 
     article > img {
         align-self: center;
@@ -227,21 +231,63 @@ h1 {
     text-transform: uppercase;
     font-size: 14px;
     padding-top: 16px; 
-    padding-bottom: 64px ;}
+    padding-bottom: 64px; }
 
 .links-personen {
 
     font-family: "Martian Mono";
-    font-weight: 700;
+    font-weight: bold;
     font-size: 14px;
     text-transform: uppercase;
-    gap: 16px; }    
+    gap: 16px;
+    padding-bottom: 24px; }    
 
+.solliciteer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 400px;
+    width: 312px;
+   
+    h2 {
+      font-family: "Archivo";
+      font-size: 24px;
+      font-weight: 500;
+    }
+    a {
+      display: flex;  
+      align-items: center;
+      font-family: "Martian Mono";
+      font-size: 14px;
+      gap: 8px;
+      text-transform: uppercase;
+      font-weight: bold; } }
 
-.partners {
+.partner {
     display: flex;
     flex-direction: column;
-    align-items: center; }
+    align-items: center; 
+    padding-top: 48px;
+    padding-bottom: 48px;
+
+    button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 12px;
+        font-weight: 400;
+        height: 40px;
+        width: 166px;
+        gap: 25px;
+        background-color: white;
+        border: 10% solid black; }
+    
+    h2 {
+        padding-left: 16px;
+        font-size: 24px;
+        font-weight: 400;
+        padding-bottom: 40px; } }
+
 
 .partner-logos {
     display: flex;
@@ -253,19 +299,14 @@ h1 {
         width: 120px;
         height: 120px; }}
 
-
-.footer-linkjes {
+.logo-inloggen {
     display: flex;
     flex-direction: column;
-    font-size: 18px;
-    text-transform: unset; 
-    padding-left: 16px; }
-   
-#logo-dda {
-    width: 107px;
-    height: 80px;
-    padding-top: 64px;
-    padding-bottom: 44px; }    
+    height: 240px; 
+    padding-left: 16px;}
+
+#logo-dda-footer {
+   margin-top: 64px; }    
 
  #inloggen {
     display: flex;
@@ -273,5 +314,45 @@ h1 {
     font-family: "Martian Mono";
     text-transform: uppercase;
     gap:8px;
-    font-size: 14px; }
+    font-size: 14px; 
+    margin-top: 40px;}
     
+.footer-linkjes {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-family: "Inter";
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: unset;
+    text-decoration: underline; 
+    text-underline-offset: 4px;
+    row-gap: 8px;
+    padding-left: 16px; 
+    height: 296px; }
+
+.footer-info {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 232px; 
+    font-family: "Inter";
+    font-size: 16px;
+    line-height: 24px;
+    padding-left: 16px;
+
+    a {
+        text-decoration: underline; 
+        text-underline-offset: 4px; }}
+
+#tekst-naam-dda {
+    font-weight: bold; }
+
+#telefoonnummer {
+    margin-top: 24px;
+    margin-bottom: 8px;
+
+}
+
+.footer-social {
+    height:176px; }

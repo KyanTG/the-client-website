@@ -13,6 +13,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Martian+Mono:wght@100..800&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     
     <title>Squadpage 1H</title>
 
@@ -22,30 +26,36 @@
  <header>
   
 
-  <img id="logo" src="content/dda-logo-white.svg" alt="logo dda">
+  <img id="logo" src="content/dda-logo-white.svg" width="53.33" height="40" alt="logo dda">
     
   <!-- navigatiebalk -->
 
     <nav>
-     <ul>
-      <li><a href="#">over ons</a></li>
-      <li><a href="#">events</a></li>
-      <li><a href="#">publicaties</a></li>
-      <li><a href="#">leden</a></li>
-      <li><a href="#">vacatures</a></li>
-      <li><a href="#">inloggen</a></li>
+      <div><a href="#">over ons</a></div>
+      <div><a href="#">events</a></div>
+      <div><a href="#">publicaties</a></div>
+      <div><a href="#">leden</a></div>
+      <div><a href="#">vacatures</a></div>
+      <div><a href="#">inloggen</a></div>
       <button id="word-lid">word lid           
         <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M8 3L13.0001 8.0001L8 13.0002" stroke="#364BF7" stroke-width="1.5" stroke-miterlimit="4.62023"/>
         <path d="M3 8L13 8" stroke="#364BF7" stroke-width="1.5" stroke-miterlimit="4.62023" stroke-linejoin="round"/>
         </svg>
       </button>
-      <li onclick=showSidebar()><a href="#"><img src="content/hamburger.svg" alt="menu button">
-      </a>
-      </li>
-     </ul>
+      <div onclick=showSidebar()><button id="menubalk" href="#">
+        
+        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="0.5" y="0.5" width="39" height="39" stroke="#222226"/>
+          <mask id="mask0_5_18742" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="4" y="4" width="32" height="32">
+          <rect x="4" y="4" width="32" height="32" fill="#D9D9D9"/>
+          </mask>
+          <g mask="url(#mask0_5_18742)">
+          <path d="M8 28V25.3333H32V28H8ZM8 21.3333V18.6667H32V21.3333H8ZM8 14.6667V12H32V14.6667H8Z" fill="#222226"/></g>
+        </svg>
+      </button>
+    </div>
     </nav>
-
  </header>
 
 
@@ -60,8 +70,7 @@
         </svg>Terug naar home</a>
          <h1>Over ons</h1>
           <p id="text1">Dutch Digital Agencies (DDA) verenigt en vertegenwoordigt de [nummer] beste digitale bureaus van Nederland. 
-                        Samen maken we de wereld om ons heen steeds een beetje slimmer. Stap voor stap, klik na klik.
-          </p>
+             Samen maken we de wereld om ons heen steeds een beetje slimmer. Stap voor stap, klik na klik.</p>
     </div>
 
   <div class="video-button">
@@ -230,7 +239,7 @@
         </div>
       </article>
 
-      <article class="solliciteer black-box">
+      <div class="solliciteer black-box">
   
        <h2>We hebben nog een plekje vrij in de organisatie 
         (en onze OCD kan dit niet aan)!</h2>
@@ -240,7 +249,7 @@
           <path d="M3 8L13 8" stroke="#364BF7" stroke-width="1.5" stroke-miterlimit="4.62023" stroke-linejoin="round"/>
           </svg></a>
 
-      </article>
+        </div>
     </section>
 
     <section class="partner black-box">
@@ -248,7 +257,12 @@
       <!-- samenwerkingen -->
 
      <h2>Wij bedanken onze trouwe partners</h2>
-     <button>word partner</button>
+     <button>word partner 
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M8 3L13.0001 8.0001L8 13.0002" stroke="#000000" stroke-width="1.5" stroke-miterlimit="4.62023"/>
+        <path d="M3 8L13 8" stroke="#000000" stroke-width="1.5" stroke-miterlimit="4.62023" stroke-linejoin="round"/>
+      </svg>
+     </button>
     </section>
 
     <section class="partner-logos">
@@ -268,7 +282,7 @@
       <div class="logo-inloggen">
       <!-- links naar andere subpaginas en contact -->
 
-        <img id="logo-dda" src="content/dda-logo-white.svg" alt="logo dda">
+        <img id="logo-dda-footer" src="content/dda-logo-white.svg" width="106.67" height="80" alt="logo dda">
          <a id="inloggen" href="#">inloggen 
            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M8 3L13.0001 8.0001L8 13.0002" stroke="#364BF7" stroke-width="1.5" stroke-miterlimit="4.62023"/>
@@ -290,12 +304,13 @@
      <section class="footer-info black-box">
 
         <p id="tekst-naam-dda">Dutch Digital Agencies</p>
-        <p id="tekst-adres">Overhoeksplein 1 1031ks Amsterdam</p>
-         <a href="#">0854010391</a>
-          <a href="mailto:info@dutchdigitalagencies.com">info@dutchdigitalagencies.com</a>
+        <p class="tekst-adres">Overhoeksplein 1</p>
+        <p class="tekst-adres">1031ks Amsterdam</p>
+        <a id="telefoonnummer"href="#">0854010391</a>
+        <a id="emailbedrijf" href="mailto:info@dutchdigitalagencies.com">info@dutchdigitalagencies.com</a>
      </section>
 
-     <section class="footer black-box">
+     <section class="footer-social black-box">
 
         <a href="https://www.instagram.com/dutchdigitalagencies/">Instagram</a>
         <a href="https://www.facebook.com/DutchDigitalAgencies/">Facebook</a>
