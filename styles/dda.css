@@ -19,11 +19,10 @@ a {
     text-decoration: none; }
 
 header {
-    display: grid;
-    grid-template-columns: 70px 70px 70px 70px;
+    display: flex;
+    justify-content: space-between;
     gap: 16px;
     margin: 16px;
-    padding-top: 16px;
 
     #menubalk {
         color: white;
@@ -76,7 +75,8 @@ h1 {
     letter-spacing: -4%; }
 
 #text1 {
-    font-size: 18px; }    
+    font-size: 18px; 
+    margin-right: 16px;}    
 
 
 .video-button {
@@ -234,7 +234,7 @@ h1 {
     padding-bottom: 64px; }
 
 .links-personen {
-
+    display: flex;
     font-family: "Martian Mono";
     font-weight: bold;
     font-size: 14px;
