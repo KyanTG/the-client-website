@@ -7,16 +7,30 @@ html {
 body {
     font-family:"Archivo", Arial, Helvetica, sans-serif; 
     margin: 0px;}
-
-button {
-    font-family: "Martian Mono";
-    text-transform: uppercase; }
    
 h3, p {
     margin: 0; }    
 
 a {
     text-decoration: none; }
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    height: 40px;
+    padding: 0 15px;
+    font-family: "Martian Mono";
+    text-transform: uppercase;
+    gap: 12px;
+    background-color: white;
+    border: 2px solid black; }
+
+.button-bold {
+    font-weight: 700;
+}
+
 
 header {
     display: flex;
@@ -97,18 +111,7 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;}
-    
-#bekijk-video {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 14px;
-    font-weight: bold;
-    height: 52px;
-    width: 248px;
-    gap: 12px;
-    background-color: white;
-    border: 10% solid black; }
+
    
 #text2 {
     font-family: "Martian Mono" ;
@@ -131,23 +134,12 @@ h1 {
         padding-right: 16px; } }
 
 
-.button-leden {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-top: 48px;
-    padding-bottom: 68px; }
-
-#bekijk-leden {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 12px;
-    height: 40px;
-    width: 208px ;
-    gap: 12px;
-    background-color: white;
-    border: 10% solid black; }    
+        .button-leden {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-top: 48px;
+            padding-bottom: 68px; }
 
 
 .logoscroller {
@@ -208,8 +200,6 @@ h1 {
     article {
         display: flex;
         flex-direction: column;
-        height: 560px;
-        width: 100%; 
         padding: 24px; }
 
     article > img {
@@ -274,18 +264,6 @@ h1 {
     align-items: center; 
     padding-top: 48px;
     padding-bottom: 48px;
-
-    button {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 12px;
-        font-weight: 400;
-        height: 40px;
-        width: 166px;
-        gap: 25px;
-        background-color: white;
-        border: 10% solid black; }
     
     h2 {
         padding-left: 16px;
@@ -333,14 +311,12 @@ h1 {
     text-decoration: underline; 
     text-underline-offset: 4px;
     row-gap: 8px;
-    padding-left: 16px; 
-    height: 296px; }
+    padding-left: 16px; }
 
 .footer-info {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    height: 232px; 
     font-family: "Inter";
     font-size: 16px;
     line-height: 24px;
@@ -361,5 +337,6 @@ h1 {
 
 .footer-social {
     display: grid;
-    grid-template-columns: repeat(4,70px);
-    height:176px; }
+    grid-template-columns: repeat(4,70px); }
+
+
