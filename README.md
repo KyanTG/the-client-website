@@ -4,7 +4,7 @@
 
 Welkom! wij moeten voor DDA vacatures een hele nieuwe website ontwerpen met een nieuw huisstijl, deze opdracht is aangeleverd door Voorhoede. Ieder persoon uit ons groepje moet een pagina maken van de website, ik heb gekozen voor de pagina over ons omdat ik dit een leuke uitdaging vond.
 
-de link naar de pagina ( voor nu nog alleen responsive op de telefoon! ).
+de link naar de pagina ( voor nu nog alleen responsive op de telefoon van 360px! ).
 
 https://kyantg.github.io/the-client-website/dda.html
 
