@@ -26,25 +26,30 @@
  <header>
   
 
-  <img id="logo" src="content/dda-logo-white.svg" width="53.33" height="40" alt="logo dda">
+  <img id="logo" src="content/dda-logo-white.svg" alt="logo dda">
     
   <!-- navigatiebalk -->
 
     <nav>
-      <div><a href="#">over ons</a></div>
-      <div><a href="#">events</a></div>
-      <div><a href="#">publicaties</a></div>
-      <div><a href="#">leden</a></div>
-      <div><a href="#">vacatures</a></div>
-      <div><a href="#">inloggen</a></div>
-      <button id="word-lid">word lid           
+      <a class="headerlinkbold" href="#">over ons</a>
+      <a class="linkheader" href="#">events</a>
+      <a class="linkheader"  href="#">publicaties</a>
+      <a class="linkheader"  href="#">leden</a>
+      <a class="linkheader"  href="#">vacatures</a>
+      <a class="link-blauw" href="#">inloggen          
         <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M8 3L13.0001 8.0001L8 13.0002" stroke="#364BF7" stroke-width="1.5" stroke-miterlimit="4.62023"/>
         <path d="M3 8L13 8" stroke="#364BF7" stroke-width="1.5" stroke-miterlimit="4.62023" stroke-linejoin="round"/>
+        </svg></a>
+
+      <button class="wordlid-button button">word lid           
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path  d="M8 3L13.0001 8.0001L8 13.0002" stroke="#000000" stroke-width="1.5" stroke-miterlimit="4.62023"/>
+        <path  d="M3 8L13 8" stroke="#000000" stroke-width="1.5" stroke-miterlimit="4.62023" stroke-linejoin="round"/>
         </svg>
       </button>
-      <div onclick=showSidebar()><button aria-label="open menu" id="menubalk" href="#" >
-        
+
+      <div onclick=showSidebar()><button aria-label="open menu" id="menubalk" href="#" > 
         <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
           <rect x="0.5" y="0.5" width="39" height="39" stroke="#222226"/>
           <mask id="mask0_5_18742" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="4" y="4" width="32" height="32">
@@ -69,7 +74,7 @@
         <path d="M13 8L3 8" stroke="#000000" stroke-width="1.5" stroke-miterlimit="4.62023" stroke-linejoin="round"/>
         </svg>Terug naar home</a>
          <h1>Over ons</h1>
-          <p id="text1">Dutch Digital Agencies (DDA) verenigt en vertegenwoordigt de [nummer] beste digitale bureaus van Nederland. 
+          <p>Dutch Digital Agencies (DDA) verenigt en vertegenwoordigt de [nummer] beste digitale bureaus van Nederland. 
              Samen maken we de wereld om ons heen steeds een beetje slimmer. Stap voor stap, klik na klik.</p>
     </div>
 
@@ -77,7 +82,7 @@
 
       <!-- video dda -->
 
-   <img id="video" src="content/video.svg" alt="video">
+   <img id="video" src="content/video.jpg" alt="video">
     <div class="video-overlay">
       <button class="button button-bold">bekijk onze video
        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -86,8 +91,9 @@
         </svg>
       </button>
     </div>
-     <p id="text2">Dé branchevereniging voor digitale bureaus</p>
-    </div>
+   </div>
+    
+    <p id="text2">Dé branchevereniging voor digitale bureaus</p>
 
     <div class="informatie">
 
@@ -157,7 +163,7 @@
       
       <article class="elvire black-box">
         
-        <img src="content/personen/elvire-no-border.jpg" alt="elvire" width="312" height="312">
+        <img src="content/personen/elvire-no-border.jpg" alt="elvire">
 
         <div class="article-info" >
           <h3 class="naam-medewerker">Elvire Jaspers</h3>
@@ -172,7 +178,7 @@
 
       <article class="karlijn black-box">
 
-        <img src="content/personen/karlijn-no-border.jpg" alt="karlijn" width="312" height="312">
+        <img src="content/personen/karlijn-no-border.jpg" alt="karlijn">
 
         <div class="article-info">
           <h3 class="naam-medewerker">Karlijn Koekoek</h3>
@@ -187,7 +193,7 @@
 
       <article class="mark black-box">
 
-        <img src="content/personen/mark-no-border.jpg" alt="mark" width="312" height="312">
+        <img src="content/personen/mark-no-border.jpg" alt="mark">
       
         <div class="article-info">
           <h3 class="naam-medewerker">Mark Landman</h3>
@@ -202,7 +208,7 @@
       
       <article class="martijn black-box">
       
-        <img src="content/personen/martijn-no-border.jpg" alt="martijn" width="312" height="312">
+        <img src="content/personen/martijn-no-border.jpg" alt="martijn">
         
         <div class="article-info">
           <h3 class="naam-medewerker">Martijn Vervoordeldonk</h3>
@@ -217,7 +223,7 @@
 
       <article class="nienke black-box">
 
-        <img src="content/personen/nienke-no-border.jpg" alt="nienke" width="312" height="312">
+        <img src="content/personen/nienke-no-border.jpg" alt="nienke">
         
         <div class="article-info">
           <h3 class="naam-medewerker">Nienke van Heusden</h3>
@@ -232,7 +238,7 @@
      
       <article class="pieter black-box">
   
-        <img src="content/personen/pieter-no-border.jpg" alt="pieter" width="312" height="312">
+        <img src="content/personen/pieter-no-border.jpg" alt="pieter">
 
         <div class="article-info">
           <h3 class="naam-medewerker">Pieter Aarts</h3>  
@@ -247,7 +253,7 @@
 
       <article class="fenna black-box">
 
-        <img src="content/personen/fenna-no-border.jpg" alt="fenna" width="312" height="312">
+        <img src="content/personen/fenna-no-border.jpg" alt="fenna">
 
         <div class="article-info">
          <h3 class="naam-medewerker">Fenna van Raaij</h3>
